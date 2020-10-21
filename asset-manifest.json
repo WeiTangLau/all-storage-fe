@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/all-storage-fe/static/css/main.25acc211.chunk.css",
+    "main.js": "/all-storage-fe/static/js/main.fffbb20c.chunk.js",
+    "main.js.map": "/all-storage-fe/static/js/main.fffbb20c.chunk.js.map",
+    "runtime-main.js": "/all-storage-fe/static/js/runtime-main.beb08d2a.js",
+    "runtime-main.js.map": "/all-storage-fe/static/js/runtime-main.beb08d2a.js.map",
+    "static/css/2.2a86faee.chunk.css": "/all-storage-fe/static/css/2.2a86faee.chunk.css",
+    "static/js/2.f8f08892.chunk.js": "/all-storage-fe/static/js/2.f8f08892.chunk.js",
+    "static/js/2.f8f08892.chunk.js.map": "/all-storage-fe/static/js/2.f8f08892.chunk.js.map",
+    "index.html": "/all-storage-fe/index.html",
+    "precache-manifest.ac8abb34c69d7390d4bbcda722163997.js": "/all-storage-fe/precache-manifest.ac8abb34c69d7390d4bbcda722163997.js",
+    "service-worker.js": "/all-storage-fe/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/all-storage-fe/static/css/2.2a86faee.chunk.css.map",
+    "static/css/main.25acc211.chunk.css.map": "/all-storage-fe/static/css/main.25acc211.chunk.css.map",
+    "static/js/2.f8f08892.chunk.js.LICENSE.txt": "/all-storage-fe/static/js/2.f8f08892.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.beb08d2a.js",
+    "static/css/2.2a86faee.chunk.css",
+    "static/js/2.f8f08892.chunk.js",
+    "static/css/main.25acc211.chunk.css",
+    "static/js/main.fffbb20c.chunk.js"
+  ]
+}
