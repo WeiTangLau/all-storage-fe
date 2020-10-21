@@ -33,7 +33,7 @@ class Field extends React.Component {
   onExecuteSelect = (e) => {
     if (this.state.dropdownTitle === "GET") {
       if (this.state.index === "") {
-        fetch("http://all-storage-20000.et.r.appspot.com/store", {
+        fetch("https://all-storage-20000.et.r.appspot.com/store", {
           method: "get",
         })
           .then((resp) => resp.json())
@@ -46,7 +46,8 @@ class Field extends React.Component {
           });
       } else {
         fetch(
-          "http://all-storage-20000.et.r.appspot.com/store/" + this.state.index,
+          "https://all-storage-20000.et.r.appspot.com/store/" +
+            this.state.index,
           {
             method: "get",
           }
@@ -65,7 +66,8 @@ class Field extends React.Component {
     } else if (this.state.dropdownTitle === "POST") {
       if (this.state.index === "") {
         fetch(
-          "http://all-storage-20000.et.r.appspot.com/store/" + this.state.value,
+          "https://all-storage-20000.et.r.appspot.com/store/" +
+            this.state.value,
           {
             method: "post",
             headers: { "Content-Type": "application/json" },
@@ -80,7 +82,7 @@ class Field extends React.Component {
           });
       } else {
         fetch(
-          "http://all-storage-20000.et.r.appspot.com/store/" +
+          "https://all-storage-20000.et.r.appspot.com/store/" +
             this.state.index +
             "/" +
             this.state.value,
@@ -100,7 +102,8 @@ class Field extends React.Component {
     } else if (this.state.dropdownTitle === "PUT") {
       if (this.state.index === "") {
         fetch(
-          "http://all-storage-20000.et.r.appspot.com/store/" + this.state.value,
+          "https://all-storage-20000.et.r.appspot.com/store/" +
+            this.state.value,
           {
             method: "put",
             headers: { "Content-Type": "application/json" },
@@ -115,7 +118,7 @@ class Field extends React.Component {
           });
       } else {
         fetch(
-          "http://all-storage-20000.et.r.appspot.com/store/" +
+          "https://all-storage-20000.et.r.appspot.com/store/" +
             this.state.index +
             "/" +
             this.state.value,
@@ -134,7 +137,7 @@ class Field extends React.Component {
       }
     } else if (this.state.dropdownTitle === "DELETE") {
       if (this.state.index === "") {
-        fetch("http://all-storage-20000.et.r.appspot.com/store", {
+        fetch("https://all-storage-20000.et.r.appspot.com/store", {
           method: "delete",
         })
           .then((resp) => resp.text())
@@ -150,7 +153,7 @@ class Field extends React.Component {
             this.setState({ resp: ["the index is invalid"] });
           });
       } else if (this.state.index === "all") {
-        fetch("http://all-storage-20000.et.r.appspot.com/store/all", {
+        fetch("https://all-storage-20000.et.r.appspot.com/store/all", {
           method: "delete",
         })
           .then((resp) => resp.text())
@@ -159,7 +162,8 @@ class Field extends React.Component {
           });
       } else {
         fetch(
-          "http://all-storage-20000.et.r.appspot.com/store/" + this.state.index,
+          "https://all-storage-20000.et.r.appspot.com/store/" +
+            this.state.index,
           {
             method: "delete",
           }
