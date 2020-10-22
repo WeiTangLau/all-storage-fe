@@ -17,12 +17,10 @@ class Field extends React.Component {
   }
 
   onIndexChange = (e) => {
-    console.log(e.target.value);
     this.setState({ index: e.target.value });
   };
 
   onValueChange = (e) => {
-    console.log(e.target.value);
     this.setState({ value: e.target.value });
   };
 
@@ -41,7 +39,6 @@ class Field extends React.Component {
             if (stores === "") {
               this.setState({ resp: ["the list is empty"] });
             }
-            console.log(stores);
             this.setState({ resp: stores });
           });
       } else {
@@ -75,7 +72,6 @@ class Field extends React.Component {
         )
           .then((resp) => resp.text())
           .then((stores) => {
-            console.log(stores);
             let arr = [];
             arr.push(stores);
             this.setState({ resp: arr });
@@ -93,7 +89,6 @@ class Field extends React.Component {
         )
           .then((resp) => resp.text())
           .then((stores) => {
-            console.log(stores);
             let arr = [];
             arr.push(stores);
             this.setState({ resp: arr });
@@ -111,7 +106,6 @@ class Field extends React.Component {
         )
           .then((resp) => resp.text())
           .then((stores) => {
-            console.log(stores);
             let arr = [];
             arr.push(stores);
             this.setState({ resp: arr });
@@ -129,7 +123,6 @@ class Field extends React.Component {
         )
           .then((resp) => resp.text())
           .then((stores) => {
-            console.log(stores);
             let arr = [];
             arr.push(stores);
             this.setState({ resp: arr });
@@ -145,7 +138,6 @@ class Field extends React.Component {
             if (stores === "") {
               this.setState({ resp: ["the list is empty"] });
             }
-            console.log(stores);
             this.setState({ resp: [stores] });
           })
           .catch((error) => {
